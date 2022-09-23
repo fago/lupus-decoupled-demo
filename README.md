@@ -23,8 +23,8 @@ After spinning the frontend up the first time you'll get some network error unti
  * Clone the repo
  * Run:
  
-      npm install
-      npm run dev
+        npm install
+        npm run dev
       
       
  ## Documentation
