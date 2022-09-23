@@ -29,7 +29,7 @@ export default {
 
   'drupal-ce': {
     baseURL:
-      'https://8080-shaal-drupalpod-2htuapfbjo8.ws-eu67.gitpod.io/ce-api',
+      'http://example.d9playground.localdev.space/ce-api',
     addRequestFormat: false,
     useProxy: false,
   },

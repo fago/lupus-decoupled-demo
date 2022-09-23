@@ -30,7 +30,8 @@ export default {
   },
   mounted () {
     // Fetch menu in SPA mode. Should be filled already in SSR mode, so this is a fallback.
-    if (!this.menus.main.length) {
+    if (!this.menus.main?.length) {
+      console.log('fetch')
       this.$drupal.fetchMenu('main')
     }
   }
