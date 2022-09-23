@@ -8,6 +8,6 @@ This is simply a new nuxt (v2) project with https://github.com/drunomics/nuxtjs-
 
 ## Testing
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/github-mduxbw)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/nuxt-starter-wuxxcy?file=README.md)
 
 After spinning it up, be sure to set the right Drupal base URL in nuxt.config.js
