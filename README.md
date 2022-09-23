@@ -8,9 +8,15 @@ This is simply a new nuxt (v2) project with https://github.com/drunomics/nuxtjs-
 
 ## Try it 
 
-[Launch it on StackBlitz ⚡️](https://stackblitz.com/edit/nuxt-starter-wuxxcy?file=README.md) or clone the repo and launch it locally
+[Launch it on StackBlitz ⚡️](https://stackblitz.com/edit/nuxt-starter-wuxxcy?file=README.md) or clone the repo and launch it locally.
 
-After spinning it up, be sure to set the right Drupal base URL in nuxt.config.js
+When using gitpod/DrupalPod as a backend, make sure to set your environment to "Shared" (via management Dashhboard at https://gitpod.io), such that the frontend can connect to it.
+
+After spinning it up you'll get some network error, until base URLs are set right. To do so:
+
+1. Set the Drupal base URL in `nuxt.config.js` and append the API-prefix /ce-api, e.g. `https://8080-shaal-drupalpod-8m3z0ms7mb6.ws-eu67.gitpod.io/ce-api`
+2. Set the frontend base URL in Drupal at `/admin/config/system/lupus-decoupled/settings`, e.g.. `https://nuxt-starter-wuxxcy--3000.local-corp.webcontainer.io`
+3. Test it. Best add some content nodes and some menu-items pointing to them. /node/1 of the backend is available under /node/1 in the frontend. You should see some naked frontend with menus, breadcrumbs & basic node-content (body field) working.
 
 ## Development
 
