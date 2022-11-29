@@ -12,6 +12,8 @@ export default {
   async asyncData ({ route, $drupal }) {
     // Fill the drupal-ce store with data, but do not return the data here to avoid hydrating data twice.
     await $drupal.fetchPage(route.path)
+    console.log('here')
+    console.log(route.path)
   },
   head () {
     return {
