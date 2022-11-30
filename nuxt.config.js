@@ -32,13 +32,10 @@ export default {
 
   'drupal-ce': {
     baseURL:
-      'https://8080-shaal-drupalpod-j9iqnett3ge.ws-eu77.gitpod.io/ce-api',
+      'https://8080-shaal-drupalpod-gs7ruhbg9u9.ws-eu77.gitpod.io/ce-api',
     addRequestFormat: false,
     addRequestContentFormat: 'markup',
     useProxy: false,
-    axios: {
-      debug: true
-    }
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
