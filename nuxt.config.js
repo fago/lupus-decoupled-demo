@@ -19,7 +19,10 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
-  ssr: false,
+  ssr: true,
+  axios: {
+    debug: false
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -29,8 +32,9 @@ export default {
 
   'drupal-ce': {
     baseURL:
-      'http://example.d9playground.localdev.space/ce-api',
+      'https://8080-shaal-drupalpod-gs7ruhbg9u9.ws-eu77.gitpod.io/ce-api',
     addRequestFormat: false,
+    addRequestContentFormat: 'markup',
     useProxy: false,
   },
 
