@@ -21,7 +21,7 @@ export default {
 
   ssr: true,
   axios: {
-    debug: true
+    debug: false
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
