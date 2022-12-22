@@ -31,8 +31,8 @@ export default {
   buildModules: ['nuxtjs-drupal-ce'],
 
   'drupal-ce': {
-    baseURL:
-      'https://8080-shaal-drupalpod-gs7ruhbg9u9.ws-eu77.gitpod.io/ce-api',
+    baseURL: process.env['DRUPAL_BASE_URL'] ??
+      'https://some-example.ws-eu77.gitpod.io/ce-api',
     addRequestFormat: false,
     addRequestContentFormat: 'markup',
     useProxy: false,
