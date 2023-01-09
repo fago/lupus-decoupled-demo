@@ -21,7 +21,9 @@ export default {
 
   ssr: true,
   axios: {
-    debug: false
+    // Allow authentication on CORS requests
+    credentials: true,
+    debug: false,
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -32,7 +34,7 @@ export default {
 
   'drupal-ce': {
     baseURL: process.env['DRUPAL_BASE_URL'] ??
-      'https://some-example.ws-eu77.gitpod.io/ce-api',
+      'https://lupus-decoupled.ddev.site/ce-api',
     addRequestFormat: false,
     addRequestContentFormat: 'markup',
     useProxy: false,
